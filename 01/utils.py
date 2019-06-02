@@ -43,16 +43,9 @@ def mnist(batch_size=50, shuffle=True, transform=mnist_pre_transform, path='./MN
         transforms.ToTensor(),
         transforms.Normalize((train_mean, ), (train_std,))
     ])
+    # Using same transform for both sets
     train_data = datasets.MNIST(path, train=True, download=True, transform=mnist_train_transform)
-
-    test_data = datasets.MNIST(path, train=False, download=True, transform=transform)
-    test_mean, test_std = get_dataset_mean_std(test_data)
-    print('Test mean and std', test_mean, test_std)
-    mnist_test_transform = transforms.Compose([
-        transforms.ToTensor(),
-        transforms.Normalize((test_mean, ), (test_std,))
-    ])
-    test_data = datasets.MNIST(path, train=False, download=True, transform=mnist_test_transform)
+    test_data = datasets.MNIST(path, train=False, download=True, transform=mnist_train_transform)
     
     train_loader = utils.data.DataLoader(train_data, batch_size=batch_size, shuffle=shuffle)
     test_loader = utils.data.DataLoader(test_data, batch_size=batch_size, shuffle=shuffle)
