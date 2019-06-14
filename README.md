@@ -1,6 +1,10 @@
 # otus-nn-homework
 Homework for OTUS ANN course.
 
+### Homework 02
+
+* [Notebook](02/log_reg.ipynb)
+
 ### Homework 01
 
 Добавил лишний transform для печати mean и std после того трансформа, который надо написать, для проверки. Их вывод
