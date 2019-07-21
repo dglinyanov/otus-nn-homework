@@ -6,6 +6,10 @@ Homework for OTUS ANN course.
 * [Notebook](06/mnist_mlp.ipynb)
 * [utils.py](06/utils.py)
 
+### Homework 04
+
+* [Notebook](04/MNIST_MLP_KERAS.ipynb)
+
 ### Homework 02
 
 * [Notebook](02/log_reg.ipynb)
