@@ -1,6 +1,11 @@
 # otus-nn-homework
 Homework for OTUS ANN course.
 
+### Homework 08
+
+* [Notebook](08/sparse_ae.ipynb)
+* [utils.py](08/utils.py)
+
 ### Homework 06
 
 * [Notebook](06/mnist_mlp.ipynb)
